@@ -8,7 +8,9 @@ public class Main
 
         Animal misty = new Dog("Misty");
 
-        Animal topCat = new Cat("TopCat");
+        Animal topCat = new Cat("TopCat", 9);
+
+        Cat ginger = new Cat("Ginger", 9);
 
         System.out.println(misty);
         System.out.println(topCat);
@@ -16,9 +18,12 @@ public class Main
         misty = topCat;
 
         topCat.setName("Garfield");
-
         System.out.println(misty);
         System.out.println(topCat);
+        
+        while (ginger.getNumLives() > -1) {
+            ginger.kill();
+        }
 
         // What will get printed out??
 
